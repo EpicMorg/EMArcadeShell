@@ -4,7 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows; 
+using System.Windows;
+using System.Windows.Input;
 
 namespace EMArcadeShell.UI
 {
@@ -44,6 +45,14 @@ namespace EMArcadeShell.UI
 			var gamelist = new WpfGamelist();
 			gamelist.Show();
 			Close();
+		}
+
+		private void WpfIntro_KeyDown(object sender, KeyEventArgs e)
+		{
+			if (e.Key == Key.Escape)
+			{
+				Close(); 
+			}
 		}
 	}
 }

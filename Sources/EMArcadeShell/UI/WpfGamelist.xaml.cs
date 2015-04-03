@@ -22,6 +22,23 @@ namespace EMArcadeShell.UI
 		public WpfGamelist()
 		{
 			InitializeComponent();
+			GameListBox.SelectedIndex = 0;
+			GameListBox.Focus();
 		}
+
+		private void WpfGameList(object sender, KeyEventArgs e)
+		{
+			if (e.Key == Key.Escape)
+			{
+				Close();
+			}
+		}
+
+		private void GameListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
+				// Добавлять к имени стрелки > и <
+		}
+
+	
 	}
 }
