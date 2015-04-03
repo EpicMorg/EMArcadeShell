@@ -27,7 +27,8 @@ namespace EMArcadeShell.UI
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show(ex.ToString());
+				Console.WriteLine(ex.ToString());
+				NextStep();
 			}
 		}
 
@@ -40,9 +41,9 @@ namespace EMArcadeShell.UI
 		{
 
 			WpfMediaElement.Source = null;
-			
 			var gamelist = new WpfGamelist();
 			gamelist.Show();
+			Close();
 		}
 	}
 }
