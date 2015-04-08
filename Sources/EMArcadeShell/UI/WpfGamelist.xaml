@@ -8,74 +8,34 @@
         Title="WpfGamelist" Background="Black" Foreground="White" MinHeight="576" MinWidth="720" MaxHeight="576" MaxWidth="720" Icon="/EMArcadeShell;component/UI/fav.ico" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Disabled" ShowInTaskbar="False" SizeToContent="WidthAndHeight" VerticalAlignment="Center" VerticalContentAlignment="Center" WindowStartupLocation="CenterScreen" Topmost="True" KeyDown="WpfGameList">
 	<Grid HorizontalAlignment="Center" Height="576" Margin="0" VerticalAlignment="Center" Width="720" MinWidth="720" MaxWidth="720" MaxHeight="576" MinHeight="576">
 		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="10*"/>
-			<ColumnDefinition Width="5*"/>
+			<ColumnDefinition Width="7*"/>
 		</Grid.ColumnDefinitions>
 		<Grid.RowDefinitions>
-			<RowDefinition Height="25*"/>
-			<RowDefinition Height="119*"/>
-		</Grid.RowDefinitions> 
+			<RowDefinition Height="145*"/>
+			<RowDefinition Height="431*"/>
+		</Grid.RowDefinitions>
 
-		<ListBox x:Name="GameListBox" Grid.Row="1" Margin="10" Foreground="White" Background="{x:Null}" HorizontalContentAlignment="Stretch" VerticalAlignment="Center" BorderBrush="{x:Null}" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden" SelectionChanged="GameListBox_SelectionChanged">
-			<ListBoxItem IsSelected="True" FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319992</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319992</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319998</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319996</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319995</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319998</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319995</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319997</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319997</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319999</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319996</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319994</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319993</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319991</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319990</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319993</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319990</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319992</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319992</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319992</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319992</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319992</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319994</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319991</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319989</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319988</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319986</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319985</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319988</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319985</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319987</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319987</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319989</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319986</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319984</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319983</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319981</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319980</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319983</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319980</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319982</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319982</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319984</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319981</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319989</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319978</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319976</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319975</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319978</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319975</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319977</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319977</ListBoxItem>
-			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">89312319989</ListBoxItem>
+		<ListBox x:Name="GameListBox" Grid.Row="1" Margin="10,0,10,18" Foreground="White" Background="{x:Null}" HorizontalContentAlignment="Stretch" BorderBrush="{x:Null}" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden" SelectionChanged="GameListBox_SelectionChanged">
+			<ListBoxItem IsSelected="True" FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">
+				<StackPanel Orientation="Horizontal">
+					<Image Width="32" Height="32" Source="/EMArcadeShell;component/CONTENT/IMG/msdos.png" HorizontalAlignment="Left" Margin="0,0,10,0"></Image>
+					<TextBlock >This is DOS game (19xx)</TextBlock>
+				</StackPanel>
+			</ListBoxItem>
+			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">
+				<StackPanel Orientation="Horizontal">
+					<Image Width="32" Height="32" Source="/EMArcadeShell;component/CONTENT/IMG/nes.png" HorizontalAlignment="Left" Margin="0,0,10,0"></Image>
+					<TextBlock >This is NES game (19xx)</TextBlock>
+				</StackPanel>
+			</ListBoxItem>
+			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">
+				<StackPanel Orientation="Horizontal">
+					<Image Width="32" Height="32" Source="/EMArcadeShell;component/CONTENT/IMG/sega.png" HorizontalAlignment="Left" Margin="0,0,10,0"></Image>
+					<TextBlock >This is SEGA game (19xx)</TextBlock>
+				</StackPanel>
+			</ListBoxItem>
+			
 		</ListBox>
-		<MediaElement x:Name="WpfMediaElement" Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="0" Margin="0,10,0,0"/>
-		<TextBlock x:Name="textBlock" Grid.Column="1" Height="446" Margin="0,12,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" HorizontalAlignment="Left" TextAlignment="Justify">
-			<Image Source="pack://siteoforigin:,,,/Resources/cage.png" Height="151" Width="114" Stretch="None" VerticalAlignment="Top"></Image>
-			ed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-			</TextBlock>
-	</Grid>
-  
+		<MediaElement x:Name="WpfMediaElement" Grid.Row="0" Grid.Column="0" Margin="0,10,0,0"/> 
+	</Grid> 
 </Window>
