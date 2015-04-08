@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.22609.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMArcadeShell_UI", "EMArcadeShell\EMArcadeShell_UI.csproj", "{25E209E8-E610-4961-B133-CBCA03EB8FA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minifmod4net", "minifmod4net\minifmod4net.csproj", "{A7DAA5B4-040F-4C5A-BD2C-89C2EFA8E4C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{25E209E8-E610-4961-B133-CBCA03EB8FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25E209E8-E610-4961-B133-CBCA03EB8FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25E209E8-E610-4961-B133-CBCA03EB8FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7DAA5B4-040F-4C5A-BD2C-89C2EFA8E4C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DAA5B4-040F-4C5A-BD2C-89C2EFA8E4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DAA5B4-040F-4C5A-BD2C-89C2EFA8E4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DAA5B4-040F-4C5A-BD2C-89C2EFA8E4C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
