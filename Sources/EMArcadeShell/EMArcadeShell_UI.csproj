@@ -36,7 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>UI\fav.ico</ApplicationIcon>
+    <ApplicationIcon>CONTENT\IMG\fav.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -99,13 +99,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\cage.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <Resource Include="UI\fav.ico" />
-    <Content Include="MEDIA\epicmorg_logo.mp4">
+    <Folder Include="CONTENT\EMU\" />
+    <Folder Include="CONTENT\GAMES\MSDOS\" />
+    <Folder Include="CONTENT\GAMES\NES\" />
+    <Folder Include="CONTENT\GAMES\SEGA\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CONTENT\IMG\fav.ico" />
+    <Resource Include="CONTENT\IMG\msdos.png" />
+    <Resource Include="CONTENT\IMG\nes.png" />
+    <Resource Include="CONTENT\IMG\sega.png" />
+    <Content Include="CONTENT\MEDIA\epicmorg_logo.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

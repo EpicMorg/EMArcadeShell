@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -23,7 +19,7 @@ namespace EMArcadeShell.UI
 		{
 			try
 			{
-				WpfMediaElement.Source = new Uri(Directory.GetCurrentDirectory()+ "\\MEDIA\\epicmorg_logo.mp4");
+				WpfMediaElement.Source = new Uri(Directory.GetCurrentDirectory()+ "\\CONTENT\\MEDIA\\epicmorg_logo.mp4");
 				WpfMediaElement.Play();
 			}
 			catch (Exception ex)
