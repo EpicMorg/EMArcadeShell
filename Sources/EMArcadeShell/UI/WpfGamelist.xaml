@@ -34,8 +34,8 @@
 					<TextBlock >This is SEGA game (19xx)</TextBlock>
 				</StackPanel>
 			</ListBoxItem>
-			
 		</ListBox>
-		<MediaElement x:Name="WpfMediaElement" Grid.Row="0" Grid.Column="0" Margin="0,10,0,0"/> 
+		<MediaElement LoadedBehavior="Manual"  x:Name="WpfMediaElement" Grid.Row="0" Grid.Column="0" Margin="0,10,0,0"/> 
+		<MediaElement LoadedBehavior="Manual"  x:Name="WpfMediaMp3Player" Grid.Row="0" Grid.Column="0" Margin="0,0,0,0" Width="0" Height="0"/> 
 	</Grid> 
 </Window>

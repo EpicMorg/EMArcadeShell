@@ -42,6 +42,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -89,9 +90,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Resource Include="FONTS\8bitoperator.ttf" />
-    <None Include="CONTENT\XM\test.xm">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -110,13 +108,21 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MiniFmodFacade.dll">
+    <Content Include="CONTENT\MP3\NeverGonnaGiveYouUp.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Resource Include="CONTENT\IMG\fav.ico" />
-    <Resource Include="CONTENT\IMG\msdos.png" />
-    <Resource Include="CONTENT\IMG\nes.png" />
-    <Resource Include="CONTENT\IMG\sega.png" />
+    <Resource Include="CONTENT\IMG\fav.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="CONTENT\IMG\msdos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="CONTENT\IMG\nes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="CONTENT\IMG\sega.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Content Include="CONTENT\MEDIA\epicmorg_logo.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -130,12 +136,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\minifmod4net\minifmod4net.csproj">
-      <Project>{a7daa5b4-040f-4c5a-bd2c-89c2efa8e4c3}</Project>
-      <Name>minifmod4net</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

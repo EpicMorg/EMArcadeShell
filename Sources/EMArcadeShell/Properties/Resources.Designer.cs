@@ -59,5 +59,15 @@ namespace EMArcadeShell.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon fav {
+            get {
+                object obj = ResourceManager.GetObject("fav", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }
