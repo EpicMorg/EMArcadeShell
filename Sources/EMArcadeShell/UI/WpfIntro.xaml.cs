@@ -6,7 +6,7 @@ using System.Windows.Input;
 namespace EMArcadeShell.UI
 {
 	/// <summary>
-	/// Interaction logic for Window1.xaml
+	///     Interaction logic for Window1.xaml
 	/// </summary>
 	public partial class WpfIntro : Window
 	{
@@ -19,7 +19,7 @@ namespace EMArcadeShell.UI
 		{
 			try
 			{
-				WpfMediaElement.Source = new Uri(Directory.GetCurrentDirectory()+ "\\CONTENT\\MEDIA\\epicmorg_logo.mp4");
+				WpfMediaElement.Source = new Uri(Directory.GetCurrentDirectory() + "\\CONTENT\\MEDIA\\epicmorg_logo.mp4");
 				WpfMediaElement.Play();
 			}
 			catch (Exception ex)
@@ -36,7 +36,6 @@ namespace EMArcadeShell.UI
 
 		private void NextStep()
 		{
-
 			WpfMediaElement.Source = null;
 			var gamelist = new WpfGamelist();
 			gamelist.Show();
@@ -47,7 +46,7 @@ namespace EMArcadeShell.UI
 		{
 			if (e.Key == Key.Escape)
 			{
-				Close(); 
+				Close();
 			}
 		}
 	}
