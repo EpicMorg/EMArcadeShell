@@ -9,6 +9,27 @@
       Title="SelectEmu">
 
     <Grid>
+	    <ListBox x:Name="EmuListBox" Margin="10,0,10,18" Foreground="White" Background="{x:Null}" HorizontalContentAlignment="Stretch" BorderBrush="{x:Null}" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Center">
+			<ListBoxItem IsSelected="True" FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">
+				<StackPanel Orientation="Horizontal">
+					<Image Width="32" Height="32" Source="/EMArcadeShell;component/CONTENT/IMG/msdos.png" HorizontalAlignment="Left" Margin="0,0,10,0"></Image>
+
+					<TextBlock >DOS GAMES</TextBlock>
+				</StackPanel>
+			</ListBoxItem>
+			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">
+				<StackPanel Orientation="Horizontal">
+					<Image Width="32" Height="32" Source="/EMArcadeShell;component/CONTENT/IMG/nes.png" HorizontalAlignment="Left" Margin="0,0,10,0"></Image>
+					<TextBlock >NES GAMES</TextBlock>
+				</StackPanel>
+			</ListBoxItem>
+			<ListBoxItem FontFamily="/EMArcadeShell;component/FONTS/#8bitoperator" FontSize="20" FontWeight="ExtraBlack">
+				<StackPanel Orientation="Horizontal">
+					<Image Width="32" Height="32" Source="/EMArcadeShell;component/CONTENT/IMG/sega.png" HorizontalAlignment="Left" Margin="0,0,10,0"></Image>
+					<TextBlock >SEGA GAMES</TextBlock>
+				</StackPanel>
+			</ListBoxItem>
+		</ListBox>
         
     </Grid>
 </Page>

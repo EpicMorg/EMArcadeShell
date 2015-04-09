@@ -17,6 +17,6 @@
 
 		<MediaElement LoadedBehavior="Manual"  x:Name="WpfMediaElement" Grid.Row="0" Grid.Column="0" MediaEnded="WpfMediaElement_Ended" Margin="0,10,0,421" Grid.RowSpan="2" Stretch="Fill"/>
 		<MediaElement LoadedBehavior="Manual"  x:Name="WpfMediaMp3Player" Grid.Row="0" Grid.Column="0" Margin="0,0,0,0" Width="0" Height="0"/>
-		<Frame x:Name="WpfFrame" Content="Frame" Margin="10" Grid.Row="1" Source="/EMArcadeShell;component/UI/Pages/SelectGame.xaml"/>
+		<Frame x:Name="WpfFrame" Content="Frame" Margin="10" Grid.Row="1" Source="/EMArcadeShell;component/UI/Pages/SelectEmu.xaml"/>
 	</Grid>
 </Window>
