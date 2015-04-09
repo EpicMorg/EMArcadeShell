@@ -64,10 +64,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="UI\WpfGamelist.xaml.cs">
+    <Compile Include="UI\Pages\SelectEmu.xaml.cs">
+      <DependentUpon>SelectEmu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\SelectGame.xaml.cs">
+      <DependentUpon>SelectGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Windows\WpfGamelist.xaml.cs">
       <DependentUpon>WpfGamelist.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\WpfIntro.xaml.cs">
+    <Compile Include="UI\Windows\WpfIntro.xaml.cs">
       <DependentUpon>WpfIntro.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -108,6 +114,9 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CONTENT\MEDIA\promo_banner.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="CONTENT\MP3\NeverGonnaGiveYouUp.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -128,11 +137,19 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="UI\WpfGamelist.xaml">
+    <Page Include="UI\Pages\SelectEmu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\WpfIntro.xaml">
+    <Page Include="UI\Pages\SelectGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Windows\WpfGamelist.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Windows\WpfIntro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

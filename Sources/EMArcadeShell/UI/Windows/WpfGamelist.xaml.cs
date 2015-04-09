@@ -1,9 +1,7 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Drawing;
+using System.ComponentModel; 
 using System.IO;
-using System.Windows;
-using System.Windows.Controls;
+using System.Windows; 
 using System.Windows.Forms;
 using System.Windows.Input;
 using KeyEventArgs = System.Windows.Input.KeyEventArgs;
@@ -17,11 +15,12 @@ namespace EMArcadeShell.UI
 		public WpfGamelist()
 		{
 			InitializeComponent();
-			GameListBox.SelectedIndex = 0;
-			GameListBox.Focus();
+			PlayBanner();
+
 			try
 			{
-				Ni.Icon = new Icon(Directory.GetCurrentDirectory() + "\\CONTENT\\IMG\\" + "fav.ico");
+				Ni.Icon = (Properties.Resources.fav);
+				//Ni.Icon = new Icon(Directory.GetCurrentDirectory() + "\\CONTENT\\IMG\\" + "fav.ico");
 			}
 			catch (Exception exxs)
 			{
@@ -66,6 +65,12 @@ namespace EMArcadeShell.UI
 			WpfMediaMp3Player.Stop();
 		}
 
+		private void PlayBanner()
+		{
+			WpfMediaElement.Source = new Uri((Directory.GetCurrentDirectory() + "\\CONTENT\\MEDIA\\promo_banner.mp4"));
+			WpfMediaElement.Play();
+		}
+
 		private void WpfGameList(object sender, KeyEventArgs e)
 		{
 			#region DEBUG
@@ -80,16 +85,13 @@ namespace EMArcadeShell.UI
 				Hide(); //Прячем с глаз долой.
 				WindowState = WindowState.Minimized; //Вместо триггера.
 				Topmost = false;
-			}
+			
+            }
 
 			#endregion
 		}
 
-		private void GameListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-		{
-			//...
-		}
-
+ 
 		private void WpfGamelist_Loaded(object sender, RoutedEventArgs e)
 		{
 			PlayMusic();
@@ -99,6 +101,11 @@ namespace EMArcadeShell.UI
 		{
 			Ni.Icon = null; //иконок на таскбаре нема
 			StopMusic(); //Останавливаем музыку. На всякий
+		}
+
+		private void WpfMediaElement_Ended(object sender, RoutedEventArgs e)
+		{
+			PlayBanner();
 		}
 	}
 }

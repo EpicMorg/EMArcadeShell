@@ -5,6 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EMArcadeShell.UI"
         mc:Ignorable="d"
-        Title="WpfIntro" Background="Black" Foreground="White" MinHeight="576" MinWidth="720" MaxHeight="576" MaxWidth="720" Icon="/EMArcadeShell;component/CONTENT/IMG/fav.ico" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Disabled" ShowInTaskbar="False" SizeToContent="WidthAndHeight" VerticalAlignment="Center" VerticalContentAlignment="Center" WindowStartupLocation="CenterScreen" Loaded="WpfIntro_Loaded" Topmost="True" KeyDown="WpfIntro_KeyDown">
+        Title="EM Arcade Machine : Intro" Background="Black" Foreground="White" MinHeight="576" MinWidth="720" MaxHeight="576" MaxWidth="720" Icon="/EMArcadeShell;component/CONTENT/IMG/fav.ico" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Disabled" ShowInTaskbar="False" SizeToContent="WidthAndHeight" VerticalAlignment="Center" VerticalContentAlignment="Center" WindowStartupLocation="CenterScreen" Loaded="WpfIntro_Loaded" Topmost="True" KeyDown="WpfIntro_KeyDown">
     <MediaElement LoadedBehavior="Manual"  x:Name="WpfMediaElement" Height="576" Margin="0" VerticalAlignment="Stretch" Width="720" HorizontalAlignment="Stretch" MediaEnded="MediaElement_Ended"/>
 </Window>

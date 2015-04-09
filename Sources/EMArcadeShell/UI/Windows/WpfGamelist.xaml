@@ -1,0 +1,22 @@
+﻿<Window x:Class="EMArcadeShell.UI.WpfGamelist"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EMArcadeShell.UI"
+        mc:Ignorable="d"
+        Title="EM Arcade Machine : Launcher"  ResizeMode="CanMinimize" Background="Black" Foreground="White" MinHeight="576" MinWidth="720" MaxHeight="576" MaxWidth="720" Icon="/EMArcadeShell;component/CONTENT/IMG/fav.ico" ScrollViewer.VerticalScrollBarVisibility="Disabled" ShowInTaskbar="False" SizeToContent="WidthAndHeight" VerticalAlignment="Center" VerticalContentAlignment="Center" WindowStartupLocation="CenterScreen" Topmost="True" KeyDown="WpfGameList" Loaded="WpfGamelist_Loaded" Closing="Window_Closing">
+	<Grid HorizontalAlignment="Center" Height="576" Margin="0" VerticalAlignment="Center" Width="720" MinWidth="720" MaxWidth="720" MaxHeight="576" MinHeight="576">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="7*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="145*"/>
+			<RowDefinition Height="431*"/>
+		</Grid.RowDefinitions>
+
+		<MediaElement LoadedBehavior="Manual"  x:Name="WpfMediaElement" Grid.Row="0" Grid.Column="0" MediaEnded="WpfMediaElement_Ended" Margin="0,10,0,421" Grid.RowSpan="2" Stretch="Fill"/>
+		<MediaElement LoadedBehavior="Manual"  x:Name="WpfMediaMp3Player" Grid.Row="0" Grid.Column="0" Margin="0,0,0,0" Width="0" Height="0"/>
+		<Frame x:Name="WpfFrame" Content="Frame" Margin="10" Grid.Row="1" Source="/EMArcadeShell;component/UI/Pages/SelectGame.xaml"/>
+	</Grid>
+</Window>
