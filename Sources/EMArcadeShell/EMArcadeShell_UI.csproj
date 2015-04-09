@@ -120,6 +120,7 @@
     <Content Include="CONTENT\MP3\NeverGonnaGiveYouUp.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="ReadMe.txt" />
     <Resource Include="CONTENT\IMG\fav.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
